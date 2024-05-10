@@ -56,7 +56,7 @@
         android:id="@+id/frase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="564dp"
+        android:layout_marginTop="428dp"
         android:text="Faça parte da nova"
         android:textColor="@color/white"
         android:textSize="24dp"

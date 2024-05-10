@@ -10,13 +10,14 @@
 
     <EditText
         android:id="@+id/editTextNumberPassword"
-        android:layout_width="376dp"
+        android:layout_width="360dp"
         android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="Senha"
         android:inputType="numberPassword"
+        android:textAlignment="center"
         app:circularflow_angles="8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,53 +28,71 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="376dp"
+        android:layout_width="360dp"
         android:layout_height="45dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:background="@color/white"
-        android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nome" />
 
     <EditText
         android:id="@+id/nome"
-        android:layout_width="176dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
         android:layout_marginTop="52dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="Nome"
         android:inputType="text"
-        app:layout_constraintEnd_toStartOf="@+id/sobrenome"
-        app:layout_constraintHorizontal_bias="0.037"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
 
     <EditText
         android:id="@+id/sobrenome"
         android:layout_width="176dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="24dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="Sobrenome"
         android:inputType="text"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toEndOf="@+id/nome"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="409dp"
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="359dp"
+        android:layout_height="45dp"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:layout_marginTop="24dp"
+        android:text="CADASTRAR"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
